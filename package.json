@@ -1,0 +1,22 @@
+{
+  "name": "canvas-automation-lab",
+  "version": "1.0.0",
+  "description": "Canvas Automation Lab using WebSockets and Playwright",
+  "type": "module",
+  "scripts": {
+    "server": "node src/server/ws-server.js",
+    "client": "serve src/client -l 8080",
+    "test": "playwright test",
+    "test:headed": "playwright test --headed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ws": "^8.21.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "serve": "^14.2.4"
+  }
+}
