@@ -8,22 +8,15 @@ A highly interactive, real-time distributed state application built to demonstra
 
 Unlike standard web applications where elements exist explicitly in the DOM tree, an HTML5 Canvas is a completely flat bitmap. This project implements a **Uni-directional Data Flow** framework to drive, render, and programmatically test complex graphics.
 
-+-------------------------------------------------------------+
-|                     BROWSER ENVIRONMENT                     |
-|                                                             |
-|  +--------------------+         +-----------------------+   |
-|  |   WebSocket Feed   | ======> |   HTML5 Canvas App    |   |
-|  | (Real-time Data)   |         | (Custom UI Components)|   |
-|  +--------------------+         +-----------------------+   |
-|                                             ^               |
-+---------------------------------------------|---------------+
-                                              | 
-                                   Calculated Target Clicks
-                                              |
-                                  +-----------------------+
-                                  |    Playwright Test    |
-                                  |   Automation Suite    |
-                                  +-----------------------+
+### 🌐 System Architecture Flow
+
+* **[Backend Server]** WebSocket State Feed (Node.js + `ws`)
+       │
+       ▼ (Real-Time JSON Telemetry Data via Outbound WebSockets)
+* **[Browser UI Element]** HTML5 Canvas App (`app.js` Engine)
+       ▲
+       │ (Calculated Coordinate Clicks via CDP Protocol)
+* **[Testing Agent]** Playwright Automation Suite (`.spec.js` Runner)
 
 
 ### The Data Loop Lifecycle:
