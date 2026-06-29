@@ -8,7 +8,7 @@ A highly interactive, real-time distributed state application built to demonstra
 
 Unlike standard web applications where elements exist explicitly in the DOM tree, an HTML5 Canvas is a completely flat bitmap. This project implements a **Uni-directional Data Flow** framework to drive, render, and programmatically test complex graphics.
 
-+-------------------------------------------------------------+
+-------------------------------------+
 |                     BROWSER ENVIRONMENT                     |
 |                                                             |
 |  +--------------------+         +-----------------------+   |
